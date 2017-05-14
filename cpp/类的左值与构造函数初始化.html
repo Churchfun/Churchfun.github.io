@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<p>csdn出现错误，暂时就用qq空间当博客了。</p>
+<ol>
+	<li>
+		<h4>返回解引用的this.</h4><br>
+		<p>在一些时候，我们定义的类操作符将会对对象进行类似运算符的操作，这需要成员函数返回一个左值。这样的函数一般采用如下形式定义：
+		</p>
+		<code><pre>
+   class T{
+   public:
+   T&amp f(){return *this;};
+   };</code></pre>
+			<p>值得注意的是，const对象是无法作为左值的，这也就意味着const对象无法调用这类函数;<br>
+			通常，对于const对象需要进行重载操作，对于如上的函数f，应重载为以下形式：<br><code>
+				T::T T::f()const{return *this};</code></li>
+
+	<li>
+		<h4>构造函数初始化问题</h4><br>
+		<p>未赋初值的变量将初始化为默认值，但某些变量必须赋初值：const对象 引用对象 没有定义默认构造函数的类对象<br>
+		以上对象的初始化也并不能在构造函数体内部赋值，而应采用c++11标准制定的构造函数初始化方法：<code><pre>
+       class T{
+       public:
+       T(int i):a(i),b(i){};
+       private:
+       const int a;int&amp b;};</code></pre></p></li>
+</ol>
+
