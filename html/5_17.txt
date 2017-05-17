@@ -1,0 +1,27 @@
+htmlµÄ¿ò¼Ü£º
+<!doctype html>
+<html>
+	<head></head>
+	<body></body>
+</html>
+
+ÆäÖĞhead²¿·ÖÖ÷Òª°üº¬Èı¸öÄÚÈİ£º <meta> <title> <style>
+
+style:	
+	ÒÔÔªËØÎªÖ÷Ìå£¬»¨À¨ºÅÄÚÎªÔªËØµÄÑùÊ½
+	<style>
+		p{
+			color:grey;
+			background-color:white;
+			font-family:sans-serif;
+			}
+		</style>
+
+±êÇ©: 	font-family ×ÖÌå 
+	color ÑÕÉ«
+	charset ×Ö·û±àÂë
+	href Á´½Ó
+	alt Í¼Æ¬ÎÄ×Ö×¢ÊÍ
+	background-color ±³¾°ÑÕÉ«
+	border-bittom£ÏÂ±ß¿ò
+	
