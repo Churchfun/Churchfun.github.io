@@ -5,7 +5,8 @@ htmlµÄ¿ò¼Ü£º
 	<body></body>
 </html>
 
-ÆäÖĞhead²¿·ÖÖ÷Òª°üº¬Èı¸öÄÚÈİ£º <meta> <title> <style>
+ÆäÖĞhead²¿·ÖÖ÷Òª°üº¬Èı¸öÄÚÈİ£: <meta> ,<title> ,<style>or<link>
+				link¿ÉÒÔÎªhtmlÒıÈëÍâ²¿ÑùÊ½±í¡£
 
 style:	
 	ÒÔÔªËØÎªÖ÷Ìå£¬»¨À¨ºÅÄÚÎªÔªËØµÄÑùÊ½
@@ -23,5 +24,7 @@ style:
 	href Á´½Ó
 	alt Í¼Æ¬ÎÄ×Ö×¢ÊÍ
 	background-color ±³¾°ÑÕÉ«
-	border-bittom£ÏÂ±ß¿ò
+	border-bittom£
+	<link type="text/css" rel="stylesheet" href="*">
+	
 	
