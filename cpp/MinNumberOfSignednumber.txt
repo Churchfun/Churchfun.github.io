@@ -1,0 +1,11 @@
+sometime for the min number of signednumber you cannt use just -xxxx but -xxxx-1
+for example:
+int32_t :-2147483648 shell be  -2147483647-1 
+couse that in comptuter -2147483647 work as ~2147483647+1  so that 21474823647  do exist in int32_t while 2147483648 do not
+so computer inprove it into const int64_t;
+
+result of code:
+cout<<sizeof(-2147483648)<<endl<<(-2147483647-1)<<endl
+is:
+8
+4
